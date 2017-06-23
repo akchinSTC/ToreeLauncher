@@ -29,7 +29,7 @@ object ToreeLauncher extends App{
   if (profilePath == null || profilePath.trim.length == 0 || !isFileExist(profilePath)){
     println("The profile path is invalid, creating one...")
 
-    FileUtils.createManagedTempDirectory(outputDir)
+//    FileUtils.createManagedTempDirectory(outputDir)
 
     val kProfile = new KernelProfile(kernelID, kernelName)
     val outputPath = kProfile.createProfile(outputDir)
